@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/to-do-list.png" />
+    <link href="src/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todoapp</title>
+  </head>
+  <body class="bg-base-200 min-h-screen p-4 flex justify-center items-start">
+    <div
+      class="w-full max-w-md border-2 border-gray-300 rounded-2xl relative overflow-hidden bg-base-100 shadow-lg"
+    >
+      <div
+        class="absolute top-0 left-0 w-full h-[40px] flex items-center justify-center bg-neutral text-neutral-content"
+      >
+        <h1 class="font-bold">Todo List Sayfası</h1>
+      </div>
+
+      <div id="cardbody" class="flex flex-col gap-4 mt-10 p-4">
+        <form id="form" class="flex flex-col gap-3 w-full">
+          <input
+            id="todoadd"
+            type="text"
+            placeholder="Todo yaz..."
+            class="input input-bordered input-accent w-full"
+          />
+          <button type="submit" class="btn btn-accent w-full">Todo Ekle</button>
+          <div class="divider"></div>
+        </form>
+      </div>
+
+      <div id="secondcardbody" class="flex flex-col gap-4 p-4">
+        <form class="flex flex-col gap-3" id="form2">
+          <h2 class="text-lg font-semibold">Todo Listesi</h2>
+          <input
+            id="filter"
+            type="text"
+            placeholder="Todo Ara..."
+            class="input input-bordered input-info w-full"
+          />
+          <div class="divider"></div>
+        </form>
+
+        <ul id="todo-list" class="w-full flex flex-col gap-2">
+          <!-- <li
+            class="flex items-center justify-between p-3 bg-base-200 rounded-lg group"
+          >
+            <span class="text-base-content">Selam</span>
+            <a
+              href="#"
+              class="delete-item btn btn-error btn-sm btn-square text-white"
+            >
+              x
+            </a>
+          </li> -->
+        </ul>
+
+        <button
+          id="clearbutton"
+          type="button"
+          class="btn btn-outline btn-error mt-4 w-full"
+        >
+          Tüm Todoları Sil
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
