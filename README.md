@@ -1,6 +1,6 @@
 Minimalist tasarımı ve kullanıcı dostu arayüzü ile günlük görevlerinizi yönetmenizi sağlayan web tabanlı bir Todo uygulaması. **Vite**, **Tailwind CSS** ve **daisyUI** kullanılarak geliştirilmiştir.
 
-![Project Preview](/public/to-do-list.png) ## 🚀 Özellikler
+## 🚀 Özellikler
 
 - **Görev Ekleme:** Hızlıca yeni görevler oluşturun.
 - **Görev Silme:** Tamamlanan veya iptal edilen görevleri tek tıkla kaldırın.
