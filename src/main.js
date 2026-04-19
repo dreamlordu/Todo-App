@@ -148,7 +148,7 @@ function checkTodosFromStorage() {
 // ====================== ALERT ======================
 function showAlert(type, message) {
   const div = document.createElement("div");
-  div.className = `alert alert-${type}`;
+  div.className = `alert alert-${type} alert-soft`;
   const span = document.createElement("span");
   span.textContent = message;
 
